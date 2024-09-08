@@ -407,7 +407,7 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                    <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return false;">
                         <p class="d-none">
                             <label>
                                 Ne pas remplir ceci : <input type="text" name="bot-field" /> 
@@ -422,7 +422,18 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                                 placeholder="Détails du projet"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success mt-3">Contactez moi</button>
+                        <p class="success-message" style="display: none;">Merci ! Votre message a été envoyé avec succès.</p>
                     </form>
+                    
+                    <script>
+                      const form = document.querySelector('form');
+                      const successMessage = document.querySelector('.success-message');
+                    
+                      form.addEventListener('submit', function() {
+                        form.style.display = 'none'; // Cache le formulaire après soumission
+                        successMessage.style.display = 'block'; // Affiche le message de succès
+                      });
+                    </script>
                     
 
                     
