@@ -422,29 +422,12 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                     </form>
                     
                     <script>
-                      const handleSubmit = (event) => {
-                        event.preventDefault();
-
-                        const myForm = event.target;
-                        const formData = new FormData(myForm);
-                        const successMessage = document.querySelector('.success-message');
-                        
-                        fetch("/", {
-                            method: "POST",
-                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                            body: new URLSearchParams(formData).toString(),
-                        })
-                            .then(() => {
-                                successMessage.style.display = 'block';
-                                console.log("Form submitted successfully")
-                      }) // Affiche le message de succès
-                            .catch((error) => alert(error));
-                        };
-
-                        document
-                        .querySelector("form")
-                        .addEventListener("submit", handleSubmit);
-
+                      cument.querySelector("form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    const form = event.target;
+                    form.submit(); // Utilisation de la soumission native
+                    document.querySelector('.success-message').style.display = 'block'; // Affichage du message de succès
+        });
                     </script>
                     
 
