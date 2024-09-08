@@ -433,7 +433,10 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                             headers: { "Content-Type": "application/x-www-form-urlencoded" },
                             body: new URLSearchParams(formData).toString(),
                         })
-                            .then(() => console.log("Form successfully submitted"))
+                            .then(() => {
+                                successMessage.style.display = 'block';
+                                cxonsole.log("Form submitted successfully")
+                      }) // Affiche le message de succès
                             .catch((error) => alert(error));
                         };
 
