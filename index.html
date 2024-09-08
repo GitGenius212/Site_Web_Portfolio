@@ -427,6 +427,7 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
 
                         const myForm = event.target;
                         const formData = new FormData(myForm);
+                        const successMessage = document.querySelector('.success-message');
                         
                         fetch("/", {
                             method: "POST",
@@ -435,7 +436,7 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                         })
                             .then(() => {
                                 successMessage.style.display = 'block';
-                                cxonsole.log("Form submitted successfully")
+                                console.log("Form submitted successfully")
                       }) // Affiche le message de succès
                             .catch((error) => alert(error));
                         };
