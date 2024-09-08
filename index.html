@@ -407,21 +407,17 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
-                        <p style="display: none;">
-                            <label>
-                                Ne pas remplir ceci <input name="bot-field" /></label>
-                            </label>
-                        </p>
-                        <input type="text" class="form-control form-control-lg" name="name" placeholder="Nom" required>
-                        <input type="email" class="form-control mt-3" name="email" placeholder="Email" required>
-                        <input type="text" class="form-control mt-3" name="subject" placeholder="Sujet" required>
+                    <form>
+                        <input name="nom" type="text" class="form-control form-control-lg" placeholder="Nom">
+                        <input name="email" type="email" class="form-control mt-3" placeholder="Email">
+                        <input name="subject" type="text" class="form-control mt-3" placeholder="Sujet">
                         <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" name="message" placeholder="Détails du projet" required></textarea>
+                            <textarea name="message" class="form-control" rows="5" id="comment"
+                                placeholder="Détails du projet"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success mt-3">Contactez moi</button>
-
+                        <button type="button" class="btn btn-success mt-3">Contactez moi</button>
                     </form>
+                    
 
                     <script>
                         function handleFormSubmission(event) {
