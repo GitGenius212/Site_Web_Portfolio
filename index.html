@@ -407,21 +407,54 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" data-netlify="true" onsubmit="return validateForm()">
 
                         
                         <input name="nom" type="text" class="form-control form-control-lg" placeholder="Nom">
+                        <p id="nameError" class="text-danger"></p>
                         <input name="email" type="email" class="form-control mt-3" placeholder="Votre Email">
+                        <p id="emailError" class="text-danger"></p>
                         <input name="subject" type="text" class="form-control mt-3" placeholder="Sujet">
+                        <p id="subjectError" class="text-danger"></p>
                         <div class="mb-3 mt-3">
                             <textarea name="message" class="form-control" rows="5" id="comment"
                                 placeholder="Détails du projet"></textarea>
                         </div>
+                        <p id="messageError" class="text-danger"></p>
                         <button type="submit" class="btn btn-success mt-3">Contactez moi</button>
                         <p class="success-message" style="display: none;">Merci ! Votre message a été envoyé avec succès.</p>
                     </form>
                     
                     <script>
+
+                        function validateForm() {
+                        let name = document.forms["contact"]["nom"].value;
+                        let email = document.forms["contact"]["email"].value;
+                        let subject = document.forms["contact"]["subject"].value;
+                        let message = document.forms["contact"]["message"].value;
+                        if (name == "" || email == "" || subject == "" || message == "") {
+                            if(name == "" ) {
+                                document.getElementById("nameError").innerHTML = "Le nom doit être rempli!";
+                            }
+                            if(email == "") {
+                                document.getElementById("emailError").innerHTML = "L'email doit être rempli!";
+                            }
+                            if(subject == "") {
+                                document.getElementById("subjectError").innerHTML = "Le sujet doit être rempli!";
+                            }
+                            if(message == "") {
+                                document.getElementById("messageError").innerHTML = "Le message doit être rempli!";
+                            }
+                            
+                            return false;
+                        } else {
+                            document
+                            .querySelector("form")
+                            .addEventListener("submit", handleSubmit);
+                        }
+                        }
+
+
                       const handleSubmit = (event) => {
                         event.preventDefault();
 
@@ -436,11 +469,11 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                             .then(() => alert("Message envoyé avec succès ! Merci !"))
                             .catch((error) => alert(error));
                         };
-
+                        /*
                         document
                         .querySelector("form")
                         .addEventListener("submit", handleSubmit);
-
+                        */
 
                     </script>
                     
