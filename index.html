@@ -45,9 +45,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#about">A propos</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link text-light" href="#services">Services</a>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#portfolio">Portfolio</a>
                     </li>
@@ -405,7 +405,7 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form name="contact" method="POST" action="https://formsubmit.co/143809384e658e565fb39d16898e9e6f" onsubmit="return validateForm()">
+                    <form name="contact" method="POST" data-netlify="true" onsubmit="return validateForm()">
 
                         
                         <input name="nom" type="text" class="form-control form-control-lg" placeholder="Nom" oninput="viderText('nameError')">
@@ -413,7 +413,6 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                         <input name="email" type="email" class="form-control mt-3" placeholder="Votre Email" oninput="viderText('emailError')">
                         <p id="emailError" class="text-danger" ></p>
                         <input name="subject" type="text" class="form-control mt-3" placeholder="Sujet" oninput="viderText('subjectError')">
-                        <!-- <input type="hidden" name="_template" value="box"> -->
                         <p id="subjectError" class="text-danger" ></p>
                         <div class="mb-3 mt-3">
                             <textarea name="message" class="form-control" rows="5" id="comment" oninput="viderText('messageError')"
@@ -453,7 +452,7 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                             return isValid;
                         }
                     
-                        /* function handleSubmit(event) {
+                        function handleSubmit(event) {
                             event.preventDefault();
                     
                             const myForm = event.target;
@@ -472,7 +471,7 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                             if (validateForm()) {
                                 handleSubmit(event);
                             }
-                        }); */
+                        });
                     
                         function viderText(fieldId) {
                             document.getElementById(fieldId).innerHTML = "";
