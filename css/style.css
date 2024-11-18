@@ -5,6 +5,52 @@
     background-size: cover;
     position: relative;
 }
+/*********************************************************/
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hero_title::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    background: #fff;
+    animation: blink 0.5s step-start infinite;
+}
+/*********************************************************/
+
+/*********************************************************/
+.animate {
+    font-size: 25px;
+    color: green;
+    font-weight: 600;
+}
+
+.processing {
+    height: 60px;
+    width: 420px;
+    justify-self: center;
+    /*border-radius: 15px;
+    border: 2px solid #000;*/
+    position: relative;
+}
+
+.processing_inner {
+    color: black;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-in;
+}
+
+.processing_inner_animate {
+    left: 100px;
+    transition: all 0.5s ease-out;
+}
+/*********************************************************/
+
 
 /* text css above hero image*/
 .hero_title {
