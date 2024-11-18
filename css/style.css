@@ -33,8 +33,8 @@
     height: 60px;
     width: 420px;
     justify-self: center;
-    /*border-radius: 15px;
-    border: 2px solid #000;*/
+    border-radius: 15px;
+    border: 2px solid #000;
     position: relative;
 }
 
