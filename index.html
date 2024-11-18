@@ -28,7 +28,7 @@
         Il a un fond transparent. Nous ajouterons un fond sombre au défilement des pages plus tard.
         Il bascule sur les petits appareils
   -->
-
+  
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
             <a class="navbar-brand text-success fw-bold" href="#">Achraf</a>
@@ -72,9 +72,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Bonjour, c'est moi, Achraf</h2>
-                    <p class="hero_desc">Je suis un développeur professionnel, diplomé du Collège de Rosemont</p>
+                    <h2 class="hero_title" id="heroTitle"></h2>
+                    <p class="hero_desc" id="heroDesc"></p>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -101,8 +102,14 @@ Pour les écrans moyens et petits, ils se chevaucheront, ce que nous pouvons voi
 
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">A propos de moi</h1>
+        <div class="container mt-4 pt-4 ">
+            <div class="processing">
+                <div id="process_bar" class="processing_inner h1">
+                    À propos de moi
+                </div>
+            </div>
+            <h1 id="para"  class="text-center "></h1>  <!--Doit rester pour que l'animation marche -->
+            
             <div class="row mt-4">
                 <div class="col-lg-4">
                     <img src="images/about_me.jpg" class="imageAboutPage" alt="">
@@ -424,6 +431,8 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
                     </form>
                     
                     <script>
+
+                        
                         function validateForm() {
                             let name = document.forms["contact"]["nom"].value;
                             let email = document.forms["contact"]["email"].value;
@@ -506,6 +515,9 @@ Dans le pied de page, nous ajouterons des liens vers nos médias sociaux via des
             </div>
         </div>
     </footer>
+
+    <script src="js/typewriter.js"></script>
+    <script src="js/geeksForGeeks_animation.js"></script>
 </body>
 
 </html>
