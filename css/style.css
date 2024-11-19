@@ -44,7 +44,7 @@
 @media only screen and (min-width: 600px) {
     .processing {
         height: 60px;
-        width: 350px;
+        width: 355px;
         justify-self: center;
         border-radius: 15px;
         border: 2px solid #000;
