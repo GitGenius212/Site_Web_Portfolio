@@ -1,6 +1,6 @@
 // Texte à afficher
 const heroTitleText = "Bonjour, c'est moi, Achraf";
-const heroDescText = "Je suis un développeur professionnel, diplômé du Collège de Rosemont";
+const heroDescText = "Je suis un développeur professionnel, diplômé du Cégep de Rosemont";
 
 // Cibler les éléments HTML
 const heroTitleElement = document.getElementById("heroTitle");
