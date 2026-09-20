@@ -214,6 +214,11 @@ la couleur supplémentaire lorsqu'un utilisateur survole une carte.*/
     padding-bottom: 4rem;
 }
 
+#portfolio {
+    overflow-x: clip;
+    overflow-anchor: none;
+}
+
 /*************************** Grid ************************/
 /* Ordinateur : 3 colonnes */
 .portfolioContainer,
