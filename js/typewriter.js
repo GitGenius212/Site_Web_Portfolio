@@ -1,5 +1,5 @@
 // Texte à afficher
-const heroTitleText = "Bonjour, c'est moi, Achraf";
+const heroTitleText = "Bonjour, c'est Achraf";
 const heroDescText = "Je suis un développeur professionnel, diplômé du Cégep de Rosemont";
 
 // Cibler les éléments HTML
