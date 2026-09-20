@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- linking css file -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -125,7 +125,7 @@ Pour les écrans moyens et petits, ils se chevaucheront, ce que nous pouvons voi
                         <div class="col-md-6">
                             <ul>
                                 <li>Nom: Achraf Louragli</li>
-                                <li>Âge: 24</li>
+                                <li>Âge: 25</li>
                                 <li>Profil : Développeur web et mobile polyvalent </li>
 
                             </ul>
@@ -281,172 +281,204 @@ Nous utiliserons des cartes Bootstrap pour afficher les projets du portefeuille.
     -->
 
     <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/soccer.png" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application de vote</h4>
-                            <p class="card-text">Application créé avec C# qui sert à voter de base pour une équipe, mais on peut voter sur n'importe quoi sur n'importe quel domaine.
-                                 Elle utilise SqLite, SignalR et des APIsControlleurs
-                                </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/VoteFCSoccer" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
+<section id="portfolio">
+    <div class="container mt-3">
+
+        <h1 class="text-center">Portfolio</h1>
+
+        <div class="portfolio-container">
+
+            <!-- Portfolio 1 -->
+            <div class="portfolioContent portfolioContent-1">
+                <video controls poster="images/soccer.png">
+                    <source src="videos/application_vote.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+
+                <div class="portfolio-body">
+                    <h4>Application de vote</h4>
+
+                    <p>
+                        Application créée avec C# qui sert à voter de base pour une équipe,
+                        mais on peut voter sur n'importe quoi dans n'importe quel domaine.
+                        Elle utilise SQLite, SignalR et des API Controllers.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/VoteFCSoccer"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <video width="100%" controls>
-                            <source src="mov_bbb.mp4" type="video/mp4">
-                            <source src="mov_bbb.ogg" type="video/ogg">
-                        </video>
-                        <div class="card-body">
-                            <h4 class="card-title">Application de gestions des émotions</h4>
-                            <p class="card-text">Application créé avec React-native qui sert à gérer les émotions des utilisateurs.
-                                 Elle utilise Async-storage , comme base de données ressemblant à SqLite. 
-                                </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/VoteFCSoccer" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/image_patient.jpg" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application de gestion de patient</h4>
-                            <p class="card-text">
-                                Cette application utilise SpringBoot et une base de données mysql
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/patients-app" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                
             </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/volunteer1.png" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application de gestion de benevolat</h4>
-                            <p class="card-text">
-                                Cette application est réalisé avec le serveur NodeJs, le frontend, Angular, et avec une partie 
-                                de Spring Boot API REST. Le serveur et Spring boot se connectent chacun à la base de données mysql.  
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/benevolat" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
+
+
+            <!-- Portfolio 2 -->
+            <div class="portfolioContent portfolioContent-2">
+                <video controls poster="images/splash-icon-light.png">
+                    <source src="videos/react_gestion_emotions.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+
+                <div class="portfolio-body">
+                    <h4>Application de gestion des émotions</h4>
+
+                    <p>
+                        Application créée avec React Native qui sert à gérer les émotions
+                        des utilisateurs. Elle utilise Async-storage comme base de données
+                        ressemblant à SQLite.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/gestions_emotions"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/AppETS.jpg" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application d'une ville intelligente</h4>
-                            <p class="card-text">
-                                Cette application est réalisé avec Flutter en équipe dans une compétition AMC qui dure 2 jours non-stop, organisé par
-                                AppIETS, un club étudiant de l'université ÉTS 
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/AppETS" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/eatbot.png" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application EatBot</h4>
-                            <p class="card-text">
-                                C'est une application programmé avec python qui simule le chat avec un bot pour commander
-                                des plats d'un restaurant. 
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/onlineEatsBot" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
             </div>
-            <div class="row">
-                
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/volunteerMF.png" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application de gestion de bénévole</h4>
-                            <p class="card-text">
-                                Réalisé avec Angular et json-server pour une entreprise montréalaise, la maison des familles.
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/impact_famille_ang" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
+
+
+            <!-- Portfolio 3 -->
+            <div class="portfolioContent portfolioContent-3">
+                <video controls poster="images/image_patient.jpg">
+                    <source src="videos/gestionHôpital.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+
+                <div class="portfolio-body">
+                    <h4>Application de gestion de patient</h4>
+
+                    <p>
+                        Application Spring Boot développée avec Kotlin et une base de
+                        données XAMPP permettant de gérer les patients pour n'importe quel
+                        hôpital. L'authentification est configurée avec Spring Security :
+                        l'administrateur peut gérer les patients, tandis que l'utilisateur
+                        normal peut seulement consulter les informations de l'hôpital.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/patients-app"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/intrusion.jpg" alt="Card" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application IntrusionLocale</h4>
-                            <p class="card-text">
-                                C'est une application qui permet de détecter un bruit. Par exemple, elle peut être utilisé en 
-                                en cas d'intrusion où une personne s'introduit, sans en avoir le droit, dans une place, une société
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/IntrusionLocale" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/zombieimg.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Application d'un jeu</h4>
-                            <p class="card-text">
-                                C'est un jeu en C# permettant de combattre des zombies pour sauver la planète grâce à un médecin reconnu mondialement . 
-                                Elle est composé en deux parties successifs. La première partie est en 2D, et la troisième en 3D. 
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/GitGenius212/Myproject3D" class="btn btn-success">Via Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-
-                
-
-                
             </div>
-    </section>
+
+
+            <!-- Portfolio 4 -->
+            <div class="portfolioContent portfolioContent-4">
+                <img src="images/volunteer1.png"
+                     alt="Application de gestion de bénévolat">
+
+                <div class="portfolio-body">
+                    <h4>Application de gestion de bénévolat</h4>
+
+                    <p>
+                        Cette application est réalisée avec le serveur NodeJs,
+                        le frontend Angular et une partie de Spring Boot API REST.
+                        Le serveur et Spring Boot se connectent chacun à la base
+                        de données MySQL.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/benevolat"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Portfolio 5 -->
+            <div class="portfolioContent portfolioContent-5">
+                <video controls poster="images/VilleIntelligenteLogo.png">
+                    <source src="videos/flutter_app.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+
+                <div class="portfolio-body">
+                    <h4>Application d'une ville intelligente</h4>
+
+                    <p>
+                        Cette application est réalisée avec Flutter en équipe dans
+                        une compétition AMC qui dure 2 jours non-stop, organisée par
+                        AppIETS, un club étudiant de l'université ÉTS.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/AppETS"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Portfolio 6 -->
+            <div class="portfolioContent portfolioContent-6">
+                <video controls poster="images/eatbot.png">
+                    <source src="videos/OnlineBotsPython.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+
+                <div class="portfolio-body">
+                    <h4>Application EatBot</h4>
+
+                    <p>
+                        C'est une application programmée avec Python qui simule
+                        le chat avec un bot pour commander des plats d'un restaurant.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/onlineEatsBot"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Portfolio 7 -->
+            <div class="portfolioContent portfolioContent-7">
+                <video controls>
+                    <source src="videos/app_gestion_benevole.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+
+                <div class="portfolio-body">
+                    <h4>Application de gestion de bénévole</h4>
+
+                    <p>
+                        Réalisé avec Angular et json-server pour une entreprise
+                        montréalaise, la maison des familles.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="https://github.com/GitGenius212/impact_famille_ang"
+                           target="_blank"
+                           class="btn btn-success">
+                            Via Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <!--
 Vous devez inclure vos coordonnées dans cette section afin que les visiteurs 
@@ -463,10 +495,10 @@ cliquez sur le bouton Generate HTML Code qui fournira votre code HTML Google Map
     -->
     <!-- contact section-->
     <section id="contact">
-        <div class="container mt-3 contactContent">
+        <div class="container mt-3">
             <h1 class="text-center">Contactez moi</h1>
 
-            <div class="row mt-4">
+            <div class="row mt-4 contactContent">
                 <div class="col-lg-6">
                     <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
 
